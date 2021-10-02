@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  /* justify-content: flex-end; */
+  /* align-items: center; */
+}
+
+/* Clases de Fullpage */
+#fp-nav ul li a span {
+  background: aquamarine;
+}
+
+#fp-nav ul li .fp-tooltip {
+  color: aquamarine;
+}
+.container {
+  width: 100%;
+  max-width: 1600px;
+  padding-left: 1em;
+  margin: auto;
+}
+
+.container span {
+  font-size: 60pt;
+  font-weight: bold;
+  position: relative;
+  font-family: "Open Sans";
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+  display: inline-block;
+  color: aquamarine;
+}
+.container span::before {
+  content: var(--l);
+  position: absolute;
+  transform: scale(1.1);
+  filter: blur(10px);
+}
+.container span::after {
+  content: var(--l);
+  position: absolute;
+  height: 200%;
+  width: 300px;
+  top: 40%;
+  left: 0;
+  filter: blur(30px);
+  transform: rotateX(50deg);
+}
+.container span:hover {
+  filter: contrast(250%);
+  content: var(--l);
+  transition: ease-in-out;
+  transform: scale(1.3);
+}
+.container span:nth-child(11) {
+  color: red;
+}
+
+.container p {
+  font-size: 2em;
+  margin-top: 20px;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: rgb(114, 114, 114);
+}
+
+.canvas-container {
+  display: flex;
+  justify-content: center;
+}
+
+video {
+  height: 0%;
+  width: 0%;
+}
+
+.sound {
+  top: 100px;
+  z-index: 2;
+  position: fixed;
+  left: 0;
+}
+
+.sound ul {
+  margin-left: 0;
+  width: 70%;
+  /* cursor: pointer; */
+}
+
+.sound ul li {
+  transform: translateX(-90px);
+  background: rgba(0, 0, 0, 0.8);
+  list-style: none;
+  padding: 10px 0;
+  margin: 10px 0;
+  transition: .5s;
+  width: 150px;
+  border-radius: 0 200px 200px 0;
+}
+.sound ul li:hover {
+  transform: translateX(0);
+}
+.sound ul li a {
+  font-weight: bold;
+  color: aquamarine;
+  font-family: sans-serif;
+  text-decoration: none;
+  padding-left: 15px;
+}
+.sound ul li i {
+  margin-left: 20px;
+  padding: 10px 10px;
+  border-radius: 50%;
+  color: aquamarine;
+}
+
+.icon {
+  font-size: 25px;
+}
+.volume {
+  position: relative;
+  left: 30px;
+}
+

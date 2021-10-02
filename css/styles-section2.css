@@ -1,0 +1,53 @@
+.contenedor-skills {
+  font-family: 'Open Sans';
+  width: 100%;
+  max-width: 1600px;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 20px;
+  margin: auto;
+}
+
+.contenedor-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-canvas {
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor-info span {
+  font-size: 40pt;
+  font-weight: bold;
+  position: relative;
+  font-family: "Open Sans";
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+  display: inline-block;
+  color: aquamarine;
+}
+.contenedor-info span::before {
+  content: var(--l);
+  position: absolute;
+  transform: scale(1.1);
+  filter: blur(10px);
+}
+.contenedor-info span::after {
+  content: var(--l);
+  position: absolute;
+  height: 200%;
+  width: 300px;
+  top: 40%;
+  left: 0;
+  filter: blur(30px);
+  transform: rotateX(50deg);
+}
+.contenedor-info span:hover {
+  filter: contrast(250%);
+  content: var(--l);
+  transition: ease-in-out;
+  transform: scale(1.3);
+}

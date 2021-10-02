@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="fullpage/fullpage.min.css" />
+    <link rel="stylesheet" href="fullpage/style.css" />
+    <link rel="stylesheet" href="css/styles-section2.css" />
+    <link rel="stylesheet" href="css/styles-section3.css" />
+    <link rel="stylesheet" href="css/styles-section4.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/8e3d89282a.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Benjamin Portafolio</title>
+  </head>
+  <body>
+    <video id="video" autoplay="true" loop="true">
+      <source src="music/sound.mp3" type="" />
+    </video>
+
+    <div class="sound">
+      <ul>
+        <li>
+          <a href="#" id="sound" class="a-sound">ON</a
+          ><i id="i-sound" class="fas fa-volume-up volume icon"></i>
+        </li>
+      </ul>
+    </div>
+
+    <div id="fullpage">
+      <section class="section" data-anchor="seccion1">
+        <div class="container">
+          <span class="animate">H</span>
+          <span class="animate">o</span>
+          <span class="animate">l</span>
+          <span class="animate">a</span>
+          <span class="animate">,</span><br />
+          <span class="animate">s</span>
+          <span class="animate">o</span>
+          <span class="animate">y</span>
+          <span class="">&nbsp;</span>
+          <span class="animate">B</span>
+          <span class="animate">e</span>
+          <span class="animate">n</span>
+          <span class="animate">j</span>
+          <span class="animate">a</span>
+          <span class="animate">m</span>
+          <span class="animate">i</span>
+          <span class="animate">n</span>
+          <span class="animate">,</span><br />
+          <span class="animate">d</span>
+          <span class="animate">e</span>
+          <span class="animate">s</span>
+          <span class="animate">a</span>
+          <span class="animate">r</span>
+          <span class="animate">r</span>
+          <span class="animate">o</span>
+          <span class="animate">l</span>
+          <span class="animate">l</span>
+          <span class="animate">a</span>
+          <span class="animate">d</span>
+          <span class="animate">o</span>
+          <span class="animate">r</span>
+          <span class="">&nbsp;</span>
+          <span class="animate">w</span>
+          <span class="animate">e</span>
+          <span class="animate">b</span><br />
+          <p>Desarrollador Front End</p>
+        </div>
+      </section>
+      <section class="section" data-anchor="seccion2">
+        <div class="contenedor-skills">
+          <div class="contenedor-info">
+            <span class="animate">M</span>
+            <span class="animate">i</span>
+            <span class="animate">s</span>
+            <span class="">&nbsp;</span>
+            <span class="animate">H</span>
+            <span class="animate">a</span>
+            <span class="animate">b</span>
+            <span class="animate">i</span>
+            <span class="animate">l</span>
+            <span class="animate">i</span>
+            <span class="animate">d</span>
+            <span class="animate">a</span>
+            <span class="animate">d</span>
+            <span class="animate">e</span>
+            <span class="animate">s</span>
+          </div>
+          <div id="myCanvasContainer" class="contenedor-canvas">
+            <canvas
+              width="700px"
+              height="700px"
+              style="width: 100%; max-width: 800px"
+              id="myCanvas"
+            >
+              <ul>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li><a href="#">Node JS</a></li>
+                <li><a href="#">PHP</a></li>
+                <li><a href="#">Bootstrap</a></li>
+                <li><a href="#">TypeScript</a></li>
+                <li><a href="#">Git</a></li>
+                <li><a href="#">React JS</a></li>
+                <li><a href="#">Python</a></li>
+                <li><a href="#">SASS</a></li>
+                <li><a href="#">REST</a></li>
+                <li><a href="#">MySQL</a></li>
+                <li><a href="#">Angular</a></li>
+                <li><a href="#">PostgreSQL</a></li>
+                <li><a href="#">npm</a></li>
+                <li><a href="#">MongoDB</a></li>
+                <li><a href="#">Express</a></li>
+              </ul>
+            </canvas>
+          </div>
+        </div>
+      </section>
+      <section class="section" data-anchor="seccion3">
+        <div class="contenedorWorks">
+          <div class="info-works">
+            <span class="animate">M</span>
+            <span class="animate">i</span>
+            <span class="animate">s</span>
+            <span class="">&nbsp;</span>
+            <span class="animate">P</span>
+            <span class="animate">r</span>
+            <span class="animate">o</span>
+            <span class="animate">y</span>
+            <span class="animate">e</span>
+            <span class="animate">c</span>
+            <span class="animate">t</span>
+            <span class="animate">o</span>
+            <span class="animate">s</span>
+          </div>
+          <div class="cube-works">
+            <div class="scene">
+              <div
+                class="cube"
+                onmouseover="giro(this)"
+                onmouseout="vuelta(this)"
+              >
+                <div class="cube__face cube__face--front">Proyecto 1</div>
+                <div class="cube__face cube__face--top">
+                  <a href="#">Link</a>
+                </div>
+                <br /><br />
+              </div>
+            </div>
+            <div class="scene">
+              <div
+                class="cube"
+                onmouseover="giro(this)"
+                onmouseout="vuelta(this)"
+              >
+                <div class="cube__face cube__face--front">Proyecto 2</div>
+                <div class="cube__face cube__face--top">
+                  <a href="#">Link</a>
+                </div>
+                <br /><br />
+              </div>
+            </div>
+            <div class="scene">
+              <div
+                class="cube"
+                onmouseover="giro(this)"
+                onmouseout="vuelta(this)"
+              >
+                <div class="cube__face cube__face--front">Proyecto 3</div>
+                <div class="cube__face cube__face--top">
+                  <a href="#">Link</a>
+                </div>
+                <br /><br />
+              </div>
+            </div>
+            <div class="scene">
+              <div
+                class="cube"
+                onmouseover="giro(this)"
+                onmouseout="vuelta(this)"
+              >
+                <div class="cube__face cube__face--front">Proyecto 4</div>
+                <div class="cube__face cube__face--top">
+                  <a href="#">Link</a>
+                </div>
+                <br /><br />
+              </div>
+            </div>
+            <div class="scene">
+              <div
+                class="cube"
+                onmouseover="giro(this)"
+                onmouseout="vuelta(this)"
+              >
+                <div class="cube__face cube__face--front">Proyecto 5</div>
+                <div class="cube__face cube__face--top">
+                  <a href="#">Link</a>
+                </div>
+                <br /><br />
+              </div>
+            </div>
+            <div class="scene">
+              <div
+                class="cube"
+                onmouseover="giro(this)"
+                onmouseout="vuelta(this)"
+              >
+                <div class="cube__face cube__face--front">Proyecto 6</div>
+                <div class="cube__face cube__face--top">
+                  <a href="#">Link</a>
+                </div>
+                <br /><br />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section" data-anchor="seccion4">
+        <div class="contenedor-contact">
+          <div class="info-contact">
+            <span class="animate">C</span>
+            <span class="animate">o</span>
+            <span class="animate">n</span>
+            <span class="animate">t</span>
+            <span class="animate">á</span>
+            <span class="animate">c</span>
+            <span class="animate">t</span>
+            <span class="animate">a</span>
+            <span class="animate">m</span>
+            <span class="animate">e</span>
+          </div>
+          <div class="fill-contact"></div>
+        </div>
+      </section>
+    </div>
+
+    <script src="canvas/tagcanvas.min.js"></script>
+    <script src="canvas/canvas.js"></script>
+    <script src="fullpage/fullpage.min.js"></script>
+    <script src="fullpage/main.js"></script>
+  </body>
+</html>
