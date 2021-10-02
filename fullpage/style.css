@@ -1,13 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
 * {
   margin: 0;
   padding: 0;
 }
 body {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
-  /* justify-content: flex-end; */
-  /* align-items: center; */
+}
+
+#particles-js {
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  display: block;
+  position: absolute;
+  background-size: cover;
+  
+  /* background-position: 100% 100%; */
+  /* background-repeat: no-repeat; */
 }
 
 /* Clases de Fullpage */
@@ -18,61 +28,7 @@ body {
 #fp-nav ul li .fp-tooltip {
   color: aquamarine;
 }
-.container {
-  width: 100%;
-  max-width: 1600px;
-  padding-left: 1em;
-  margin: auto;
-}
 
-.container span {
-  font-size: 60pt;
-  font-weight: bold;
-  position: relative;
-  font-family: "Open Sans";
-  cursor: pointer;
-  transition: all 300ms ease-in-out;
-  display: inline-block;
-  color: aquamarine;
-}
-.container span::before {
-  content: var(--l);
-  position: absolute;
-  transform: scale(1.1);
-  filter: blur(10px);
-}
-.container span::after {
-  content: var(--l);
-  position: absolute;
-  height: 200%;
-  width: 300px;
-  top: 40%;
-  left: 0;
-  filter: blur(30px);
-  transform: rotateX(50deg);
-}
-.container span:hover {
-  filter: contrast(250%);
-  content: var(--l);
-  transition: ease-in-out;
-  transform: scale(1.3);
-}
-.container span:nth-child(11) {
-  color: red;
-}
-
-.container p {
-  font-size: 2em;
-  margin-top: 20px;
-  font-weight: bold;
-  font-family: sans-serif;
-  color: rgb(114, 114, 114);
-}
-
-.canvas-container {
-  display: flex;
-  justify-content: center;
-}
 
 video {
   height: 0%;
