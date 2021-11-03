@@ -5,20 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="fullpage/fullpage.min.css" />
-    <link rel="stylesheet" href="fullpage/style.css" />
-    <link rel="stylesheet" href="css/styles-section1.css" />
-    <link rel="stylesheet" href="css/styles-section2.css" />
-    <link rel="stylesheet" href="css/styles-section3.css" />
-    <link rel="stylesheet" href="css/styles-section4.css" />
+    <link rel="stylesheet" href="css/styles-sections.css" />
+    <link rel="stylesheet" href="css/styles-cubes.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <script
       src="https://kit.fontawesome.com/8e3d89282a.js"
       crossorigin="anonymous"
     ></script>
-    <title>Benjamin - Portafolio</title>
+    <title>Mi Portafolio</title>
   </head>
   <body>
     <video id="video" autoplay="true" loop="true">
@@ -39,7 +43,7 @@
         <div class="particles" id="particles-js"></div>
         <div class="container-general">
           <div class="contenedor">
-            <div class="container">
+            <div class="container animate__animated animate__fadeInUp">
               <span class="animate">H</span>
               <span class="animate">o</span>
               <span class="animate">l</span>
@@ -77,30 +81,57 @@
               <span class="animate">b</span><br />
               <p>Desarrollador Front End</p>
             </div>
+            <div class="contenedor-icono">
+              <p>
+                <a href="#seccion2" class="texto-blanco"
+                  ><i class="fas fa-chevron-down"></i
+                ></a>
+              </p>
+            </div>
           </div>
-
-          <div class="container-right"></div>
         </div>
       </section>
+
       <section class="section" data-anchor="seccion2">
         <div class="contenedor-skills">
-          <div class="contenedor-info">
-            <span class="animate">M</span>
-            <span class="animate">i</span>
-            <span class="animate">s</span>
-            <span class="">&nbsp;</span>
-            <span class="animate">H</span>
-            <span class="animate">a</span>
-            <span class="animate">b</span>
-            <span class="animate">i</span>
-            <span class="animate">l</span>
-            <span class="animate">i</span>
-            <span class="animate">d</span>
-            <span class="animate">a</span>
-            <span class="animate">d</span>
-            <span class="animate">e</span>
-            <span class="animate">s</span>
+          <div class="contenedor2">
+            <div class="contenedor-info">
+              <span class="animate">M</span>
+              <span class="animate">i</span>
+              <span class="animate">s</span>
+              <span class="">&nbsp;</span>
+              <span class="animate">H</span>
+              <span class="animate">a</span>
+              <span class="animate">b</span>
+              <span class="animate">i</span>
+              <span class="animate">l</span>
+              <span class="animate">i</span>
+              <span class="animate">d</span>
+              <span class="animate">a</span>
+              <span class="animate">d</span>
+              <span class="animate">e</span>
+              <span class="animate">s</span>
+            </div>
+            <div class="percent">
+              <p>Front End</p>
+              <div class="progress">
+                <span class="progress-bar" style="width: 80%"></span>
+              </div><br>
+              <p>Back End</p>
+              <div class="progress">
+                <span class="progress-bar" style="width: 70%"></span>
+              </div><br>
+              <p>React Js</p>
+              <div class="progress">
+                <span class="progress-bar" style="width: 60%"></span>
+              </div><br>
+              <p>Angular</p>
+              <div class="progress">
+                <span class="progress-bar" style="width: 50%"></span>
+              </div>
+            </div>
           </div>
+
           <div id="myCanvasContainer" class="contenedor-canvas">
             <canvas
               width="700px"
@@ -118,7 +149,7 @@
                 <li><a href="#">TypeScript</a></li>
                 <li><a href="#">Git</a></li>
                 <li><a href="#">React JS</a></li>
-                <li><a href="#">Python</a></li>
+                <!-- <li><a href="#">Python</a></li> -->
                 <li><a href="#">SASS</a></li>
                 <li><a href="#">REST</a></li>
                 <li><a href="#">MySQL</a></li>
@@ -132,23 +163,27 @@
           </div>
         </div>
       </section>
+
       <section class="section" data-anchor="seccion3">
         <div class="contenedorWorks">
-          <div class="info-works">
-            <span class="animate">M</span>
-            <span class="animate">i</span>
-            <span class="animate">s</span>
-            <span class="">&nbsp;</span>
-            <span class="animate">P</span>
-            <span class="animate">r</span>
-            <span class="animate">o</span>
-            <span class="animate">y</span>
-            <span class="animate">e</span>
-            <span class="animate">c</span>
-            <span class="animate">t</span>
-            <span class="animate">o</span>
-            <span class="animate">s</span>
+          <div class="contenedor2">
+            <div class="info-works">
+              <span class="animate">M</span>
+              <span class="animate">i</span>
+              <span class="animate">s</span>
+              <span class="">&nbsp;</span>
+              <span class="animate">P</span>
+              <span class="animate">r</span>
+              <span class="animate">o</span>
+              <span class="animate">y</span>
+              <span class="animate">e</span>
+              <span class="animate">c</span>
+              <span class="animate">t</span>
+              <span class="animate">o</span>
+              <span class="animate">s</span>
+            </div>
           </div>
+
           <div class="cube-works">
             <div class="scene">
               <div
@@ -228,22 +263,60 @@
                 <br /><br />
               </div>
             </div>
+            <div class="scene">
+              <div
+                class="cube"
+                onmouseover="giro(this)"
+                onmouseout="vuelta(this)"
+              >
+                <div class="cube__face cube__face--front">Proyecto 4</div>
+                <div class="cube__face cube__face--top">
+                  <a href="#">Link</a>
+                </div>
+                <br /><br />
+              </div>
+            </div>
+            <div class="scene">
+              <div
+                class="cube"
+                onmouseover="giro(this)"
+                onmouseout="vuelta(this)"
+              >
+                <div class="cube__face cube__face--front">Proyecto 5</div>
+                <div class="cube__face cube__face--top">
+                  <a href="#">Link</a>
+                </div>
+                <br /><br />
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
       <section class="section" data-anchor="seccion4">
         <div class="contenedor-contact">
-          <div class="info-contact">
-            <span class="animate">C</span>
-            <span class="animate">o</span>
-            <span class="animate">n</span>
-            <span class="animate">t</span>
-            <span class="animate">á</span>
-            <span class="animate">c</span>
-            <span class="animate">t</span>
-            <span class="animate">a</span>
-            <span class="animate">m</span>
-            <span class="animate">e</span>
+          <div class="contenedor2">
+            <div class="info-contact">
+              <span class="animate">C</span>
+              <span class="animate">o</span>
+              <span class="animate">n</span>
+              <span class="animate">t</span>
+              <span class="animate">á</span>
+              <span class="animate">c</span>
+              <span class="animate">t</span>
+              <span class="animate">a</span>
+              <span class="animate">m</span>
+              <span class="animate">e</span>
+            </div><br>
+            <div class="contact-form">
+              <form action="" class="form">
+                <input type="text" placeholder="Nombre"/>
+                <input type="email" placeholder="Correo"/>
+                <input type="text" placeholder="Asunto"/>
+                <textarea name="" id="" cols="30" rows="5" placeholder="Mensaje"></textarea>
+                <input type="submit" value="Enviar Mensaje" />
+              </form>
+            </div>
           </div>
           <div class="fill-contact"></div>
         </div>

@@ -8,11 +8,11 @@ let options = [
 ]
 window.onload = () => {
   try {
-    TagCanvas.textColour = 'aquamarine'
+    TagCanvas.textColour = '#6fcf97'
     TagCanvas.initial = [0.4,0.2];
     TagCanvas.outlineColour = "rgba(0,0,0,0)";
     TagCanvas.textHeight = "22";
-    TagCanvas.textFont = "Open Sans";
+    TagCanvas.textFont = 'Montserrat Alternates', 'sans-serif';
     TagCanvas.freezeActive = false;
     TagCanvas.wheelZoom = false
     TagCanvas.Start("myCanvas", '', options);

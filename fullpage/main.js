@@ -1,6 +1,15 @@
+let stateScrolling = true;
+let navigation = true
+if (screen.width < 1084) {
+  stateScrolling = false
+}
+if (screen.width < 1500) {
+  navigation = false
+}
+
 const myFullPage = new fullpage("#fullpage", {
   //options here
-  autoScrolling: true, //Se activa el scroll
+  autoScrolling: stateScrolling, //Se activa el scroll
   fitToSection: false, //Acomoda el scroll automaticamente para que la sección se muestre en la pantalla
   fitToSectionDelay: 500, // Delay antes de acomodar la sección automáticamente
   easing: "easeInOutCubic", // Función de tiempo de la animación
@@ -9,9 +18,9 @@ const myFullPage = new fullpage("#fullpage", {
   easingcss3: "ease-out", // Curva de velocidad del efecto
   loopBottom: false,
 
-  navigation: true,
+  navigation: navigation,
 
-  sectionsColor: ["#100E1D", "#100E1D", "#100E1D", "#100E1D"],
+  sectionsColor: ["#141432", "#141432", "#141432", "#141432"],
   verticalCentered: true,
 
   anchors: ["seccion1", "seccion2", "seccion3", "seccion4"],
@@ -37,20 +46,19 @@ let on_off = document.getElementById("sound");
 let off_on = document.getElementsByClassName("a-sound")[0];
 let i_sound = document.getElementById("i-sound");
 let video = document.getElementById("video");
-console.log(off_on);
 
 let onOff = () => {
   if (on_off.innerHTML == "ON") {
     video.pause();
     on_off.innerHTML = "OFF";
-    on_off.style.color = "red";
+    on_off.style.color = "#fd1d1d";
     i_sound.classList = "fas fa-volume-mute volume icon";
-    i_sound.style.color = "red";
+    i_sound.style.color = "#fd1d1d";
   } else {
     video.play();
     on_off.innerHTML = "ON";
-    on_off.style.color = "aquamarine";
-    i_sound.style.color = "aquamarine";
+    on_off.style.color = "#54C1FB";
+    i_sound.style.color = "#54C1FB";
     i_sound.classList = "fas fa-volume-up volume icon";
   }
 };
@@ -77,7 +85,6 @@ let vuelta = (x) => {
   x.classList.add(showClass);
   currentClass = showClass;
 };
-
 
 // FORMULARIO
 // function usrpas() {
